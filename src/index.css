@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body,
+html,
+#app {
+  position: relative;
+  min-height: 100vh;
+  font-family: "Glovo", "Arial", "Helvetica Neue", Helvetica, sans-serif;
+}
+
+main {
+  min-height: 80vh;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
