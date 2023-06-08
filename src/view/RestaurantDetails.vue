@@ -56,7 +56,7 @@
 
     const route = useRoute()
     const items = data.filter(p => p.id == route.params.id)
-    const {productos, category, nombre } = items[0]
+    const {productos, category, nombre} = items[0]
     
     const types = productos.map(p => (
         p.tipo

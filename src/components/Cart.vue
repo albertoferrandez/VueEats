@@ -8,7 +8,8 @@
                         Todavía no has añadido ningún producto. Cuando lo hagas, ¡verás los productos aquí!
                     </p>
                 </div>
-                <div v-for="items in itemsInCart" :key="items.product.nombre" class="flex flex-col w-full px-3">
+                <div v-for="items in itemsInCart" :key="items.product.nombre"
+                    class="flex flex-col w-full px-3  overflow-y-auto">
                     <div class="flex justify-between items-center">
                         <h2 class="text-sm text-gray-900 p-4">{{ items.product.nombre }}</h2>
                         <div class="flex items-center">
@@ -18,14 +19,14 @@
                     <div class="flex justify-between sm:mt-0 text-xs">
                         <div class="flex items-center border-gray-100">
                             <span @click.prevent="decrementQuantity(items.product.id)" class="cursor-pointer rounded-l bg-gray-100 
-                                  py-1 px-3.5 duration-100 hover:bg-[#a894f9] hover:text-blue-50">
+                                      py-1 px-3.5 duration-100 hover:bg-[#a894f9] hover:text-blue-50">
                                 -
                             </span>
                             <div class="py-1 px-3.5 border bg-white flex items-center outline-none">
                                 {{ items.amount }}
                             </div>
                             <span @click.prevent="incrementQuantity(items.product.id)" class="cursor-pointer rounded-r bg-gray-100 py-1 
-                                  px-3 duration-100 hover:bg-[#a894f9] hover:text-blue-50">
+                                      px-3 duration-100 hover:bg-[#a894f9] hover:text-blue-50">
                                 +
                             </span>
                         </div>
@@ -36,16 +37,18 @@
                     </div>
                 </div>
             </div>
+
             <button v-disabled="itemsInCart.length === 0" class="bg-[#a894f9] text-white absolute bottom-0 
-                    font-bold py-4 px-4 rounded-md text-sm w-full">
+                        font-bold py-4 px-4 rounded-md text-sm w-full">
                 <div>
                     Realizar Pedido
-                    <span v-if="totalCart > 0">{{ totalCart }} €</span>
+                    <span v-if="totalCart > 0">{{ totalCart.toFixed(2) }} €</span>
                 </div>
             </button>
         </div>
     </section>
 </template>
+
 <script setup>
 import { inject, computed } from 'vue'
 
@@ -72,8 +75,4 @@ const totalCart = computed(() => {
     }, 0)
 })
 
-
 </script>
-<style lang="">
-    
-</style>

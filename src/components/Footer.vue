@@ -8,7 +8,7 @@
 					<div class="flex items-center justify-center w-12 h-12 rounded-full">
             <img src="/icon.png" alt="" width="35" />
 					</div>
-					<span class="self-center text-2xl font-semibold">VueEats</span>
+					<span class="self-center text-2xl font-semibold text-white">VueEats</span>
 				</a>
 			</div>
 			<div class="grid grid-cols-2 text-xs gap-x-3 
