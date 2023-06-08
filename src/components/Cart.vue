@@ -1,5 +1,4 @@
 <template>
-    <section class="col-span-3 hidden md:block">
         <div class="sticky bg-white w-full rounded shadow-md min-h-[450px]">
             <h1 class="font-bold text-center py-4 border-b border-b-purple-400">Tu pedido</h1>
             <div class="flex flex-col mt-4">
@@ -46,7 +45,6 @@
                 </div>
             </button>
         </div>
-    </section>
 </template>
 
 <script setup>
