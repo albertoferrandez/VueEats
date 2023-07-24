@@ -3,7 +3,7 @@
         <h3 class="text-xs font-bold mb-4">Ordenar por</h3>
         <button @click.prevent="$emit('update:filter-byrating', true)"
         class="flex items-center gap-4 text-black font-normal text-xs mt-1">
-          <img src="../assets/like.png" alt="" width="50" class="object-cover w-6 h-6" />
+          <img src="/assets/like.png" alt="" width="50" class="object-cover w-6 h-6" />
           Populares
         </button>
         <h3 class="text-xs font-bold mb-4 mt-4">Filtrar por</h3>

@@ -59,8 +59,8 @@
 
 <script setup>
 import { computed, ref } from "vue"
-import { categories } from "../assets/Categories"
-import { data } from "../assets/Restaurantes"
+import { categories } from "../data/Categories"
+import { data } from "../data/Restaurantes"
 import Navbar from "../components/Navbar.vue"
 
 let selectedCategory = ref("Restaurantes")

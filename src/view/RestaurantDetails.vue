@@ -6,7 +6,7 @@
                 <button type="button"
                     class="lg:hidden inline-flex justify-center gap-x-1.5 bg-white px-3 py-2 text-sm font-semibold text-gray-900 hover:bg-gray-50"
                     id="menu-button" aria-expanded="true" aria-haspopup="true" @click="isOpen = !isOpen">
-                    <img src="../assets/cart.png" alt="cart" width="20">
+                    <img src="/assets/cart.png" alt="cart" width="20">
                     <svg class="-mr-1 h-5 w-5 text-gray-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
                         <path fill-rule="evenodd"
                             d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
@@ -66,7 +66,7 @@
     </main>
 </template>
 <script setup>
-import { data } from "../assets/Restaurantes"
+import { data } from "../data/Restaurantes"
 import { useRoute } from 'vue-router'
 import { ref, computed, inject } from 'vue'
 import Cart from '../components/Cart.vue'
